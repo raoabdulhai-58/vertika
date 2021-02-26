@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Vertika</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light" id="header">
+    <div id="brandName">
+      <img src="Images/vertika logo1.png" id="logo" alt="logo">
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item " id="link_page">
+          <a class="nav-link" onclick="changecolor()"  href="#">About Us <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item" id="link_page">
+          <a class="nav-link" onclick="changecolor()" href="#">Products</a>
+        </li>
+        <li class="nav-item" id="link_page">
+          <a class="nav-link" onclick="changecolor()" href="#">Careers</a>
+        </li>
+        <li class="nav-item" id="link_page">
+          <a class="nav-link" href="#" onclick="changecolor()">Contact Us</a>
+        </li>
+
+      </ul>
+    </div>
+  </nav>
+    <section id="form-sec">
+         <label for="inp" id="login">Login</label>
+        <p><input type="text" id="inp" placeholder="Email"></p>
+        <p><input type="text" id="inp" placeholder="Password"></p>
+        <p><button id="btn1">G0</button></p>
+        <p><a href="#" id="link1">Forgot your password?</a></p>
+    </section>
+    <section id="dailogbox" class="hide">
+      <div id="inner-box">
+       <p> Plz press ok to close </p>
+        <button id="btn-dailogbox" onclick="closebtn()" >ok</button>
+      </div>
+    </section>
+    <main>
+      <div id="btns">
+        <a href="https://www.google.com/">  <button id="btn4"> Go to Google</button> </a>
+          <button id="btn4" onclick="dailbox()"> Open dailog box</button>
+          <button id="btn4" onclick="showmsg()"> show msg on right</button>
+          <span id="right-box" class="hide">To close click left </span>
+        <!-- <a href="https://www.google.com/">  <button id="btn4"> Go to Google</button> </a> -->
+      </div>
+    </main>
+    <section id="box-sec">
+      <div id="boxes">
+      <div class="box">
+        <h3>Fast.</h3>
+        <p>Change your communication anytime, keeping it “new and fresh". Showcase your brand dynamism and speed.</p>
+      </div>
+      <div class="box" id="box2">
+       <h3>Flexible.</h3>
+       <p>Program Channels by language, topic, and demographics. Give your audience information specific to their needs.</p>
+      </div>
+      <div class="box">
+        <h3>Engaging.</h3>
+        <p>Present information smartly and in visually compelling ways. Get attention. Excite, attract and retain your audience.</p>
+      </div>
+    </div>
+    <div style="text-align: center;">
+       <button id="btn2" >Read More </button>
+      </div>
+    </section>
+
+    <footer id="main-footer" >
+      <div id="footer">
+       <div class="footer-links" >
+           <div id="footer-heading">
+             <h4>About Vertika</h4>
+           </div>
+          <ul>
+            <li><a href="#"> Home            </a> </li>
+            <li><a href="#">Login            </a> </li>
+            <li><a href="#">About Vertika    </a> </li>
+            <li><a href="#">Management Team  </a> </li>
+            <li><a href="#">Career           </a> </li>
+            <li><a href="#">Privacy Policy   </a></li>
+            <li><a href="#">Contact Us       </a> </li>
+          </ul>
+       </div>
+       <div  class="footer-links" >
+           <div id="footer-heading" class="mid-heading">
+             <h4>Products</h4>
+           </div>
+          <ul class="mid-heading">
+            <li><a href="#"> Makes Channels          </a></li>
+            <li><a href="#">Platform and The Product  </a></li>
+            <li><a href="#">How does Vertika work?    </a></li>
+            <li><a href="#">Features                  </a></li>
+            <li><a href="#">Industries and Sectors    </a> </li>
+            <li><a href="#">Benefits                  </a></li>
+            <li><a href="#">Clicking on Vertika!      </a></li>
+          </ul>
+       </div>
+       <div class="footer-links">
+       <div id="footer-heading">
+         <h4>Vertika in Action</h4>
+       </div>
+       <button id="btn3">Try Vertika </button>
+       <div>
+       <div id="footer-heading">
+          <h4>Follow us</h4>
+       </div>
+         <div id="icons">
+          
+           <span><a href="#"><i class="fa fa-facebook-square" style="font-size:24px"></i></a></span>
+           <span><a href="#"><i class="fa fa-twitter" style="font-size:24px"></i></a></span>
+           <span><a href="#"><i class="fa fa-linkedin" style="font-size:24px"></i></a></span>
+         </div>
+       </div>
+    </div>
+  </div>
+    </footer>
+    
+  <script src="js/index.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
