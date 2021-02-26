@@ -9,10 +9,9 @@ body{
 }
 main{
   background-image: url('../Images/home1.jpg');
-  width: 100vw !important;
   height: 400px !important;
-  object-fit: cover;
-  background-size: cover;
+  max-width: 100%;
+  background-size:100% 100%;
   background-repeat: no-repeat;
 }
 main a{
@@ -23,7 +22,6 @@ main a{
 #btns{
   display: flex;
   justify-content: center;
-  /* flex-direction: row; */
   flex-wrap: wrap;
   align-items:center !important;
  padding-top: 20% !important;
@@ -185,7 +183,6 @@ main a{
 #link1{
   color: gray;
   text-decoration: underline;
-  /* height: 40px !important; */
   padding-top: 20px !important;
   margin: 10px !important;
 }
