@@ -65,7 +65,9 @@ main a{
   color: grey;
   font-weight: bold;
   cursor: pointer;
-  
+  position: relative;
+    top: 0;
+    transition: .05s ease-in-out;
 }
 #btn4{
   width: 200px!important;
@@ -78,18 +80,11 @@ main a{
   color: #444;
   font-weight: bold;
   cursor: pointer;
-  transition: .5s;
+  transition: .05s ease-in-out;
 }
-#btn4:focus{
+#btn4:active{
   color: #444;
   transform: scale(0.9);
-  box-shadow: 0px 0px 4px 1px whitesmoke;
-  animation: anim-shadow .3s forwads;
-}
-@keyframes anim-shadow{
-    100%{
-      box-shadow: 0px 0px 50px 20px rgba(206, 206, 64, 0.5);
-    }
 }
 #right-box{
   background-color: red;
@@ -179,6 +174,16 @@ main a{
    color: grey;
    font-weight: bold;
    cursor: pointer;
+    position: relative;
+    top: 0;
+    transition: .05s ease-in-out;
+}
+#btn1:active,#btn2:active, #btn3:active,#btn-dailogbox:active{
+  top: 6px;
+  background-color: #C9DD00;
+}
+#btn1:hover,#btn2:hover, #btn3:hover,#btn-dailogbox:hover,#btn4:hover{
+  background-color: rgba(255, 230, 0, 0.993);
 }
 #link1{
   color: gray;
@@ -212,6 +217,9 @@ main a{
   color: black;
   font-weight: bold;
   cursor: pointer;
+  position: relative;
+    top: 0;
+    transition: .05s ease-in-out;
 }
 #main-footer{
   width: 100% !important;
@@ -263,6 +271,9 @@ main a{
   color: black;
   font-weight: bold;
   cursor: pointer;
+  position: relative;
+    top: 0;
+    transition: .05s ease-in-out;
 }
 #icons span:nth-child(2) {
    margin: 10px !important;
